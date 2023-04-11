@@ -1,0 +1,44 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+.footer-content{
+    background: #333;
+    padding: 0.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-content h1{
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow : 1px 1px #000, -1px -1px #333
+}
+
+.footer-content a{
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-content .fa-utensils{
+    color: #99E2D0;
+    margin-right: 0.6rem;
+}
+
+.footer-content .fa-handshake{
+    color: #FF79DA;
+    margin-right: 0.1rem;
+}

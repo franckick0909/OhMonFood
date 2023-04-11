@@ -1,0 +1,261 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+
+/*     TITRE    */
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+header .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .title img{
+    width: 80%;
+    animation: title 0.5s 3s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    -webkit-animation: title 0.5s 3s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
+
+@keyframes title{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+
+header .localisation{
+    display: flex;
+    align-items: center;
+
+}
+
+header .localisation .fa-location-dot{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #9356DC;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #ff79da;
+    text-align: center;
+    line-height: 3rem;
+    animation: fa 1s 3.2s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    -webkit-animation: fa 1s 3.2s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
+
+@keyframes fa{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+header .localisation form input{
+    width: 300px;
+    height: 35px;
+    border: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-top: 2px solid #9356DC;
+    border-bottom: 1px solid #ff79da;
+    outline: none;
+    border-radius: 25px;
+    animation: input 1.5s 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    -webkit-animation: input 1.5s 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
+
+@keyframes input{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+}
+    100%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+}
+}
+
+input[type=search]:focus{
+    padding-left: 0.6rem;
+    background: #99E2D0;
+}
+
+header .localisation form input::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #111;
+
+}
+
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        height: 9rem;
+    }
+    header .title{
+        margin-bottom: 1rem;
+    }
+}
+
+/*     RESERVATION   */
+
+
+.reservation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 18rem;
+    background: #f1f1f1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.reservation h3{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: texth3 2s 4s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    text-shadow: 1px 1px #fff, -1px -1px #444;
+    -webkit-animation: texth3 2s 4s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
+
+@keyframes texth3{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+.reservation h3 span{
+    color: #9356DC;
+}
+
+.reservation h4{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    animation: texth4 2.5s 4.3s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+    -webkit-animation: texth4 2.5s 4.3s cubic-bezier(0.075, 0.82, 0.165, 1) both;
+}
+
+
+
+
+@keyframes texth4{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+.reservation .bouton{
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 34px;
+    border-radius: 25px;
+    background-image: linear-gradient(0deg,#9356dc,#ff79da);
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, .3);
+    transition: all 0.3s;
+    animation: bouton 2.5s 5s cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
+    -webkit-animation: bouton 2.5s 5s cubic-bezier(0.075, 0.82, 0.165, 1) backwards;
+}
+
+@keyframes bouton{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+}
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+}
+
+.reservation .bouton:hover{
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, .5);
+    background-image: linear-gradient(0deg,hsl(267, 66%, 70%),#ff79da);
+    transform: translateY(-0.2rem);
+}

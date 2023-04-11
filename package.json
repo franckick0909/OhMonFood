@@ -1,0 +1,14 @@
+{
+  "name": "text2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/le_delice_des_sens.scss:./css/le_delice_des_sens.css",
+    "prefix": "postcss ./css/a_la_francaise.css --use autoprefixer -d ./css/prefixed/"
+  },
+  
+  "author": "",
+  "license": "ISC",
+  "browserlist": "last 4 versions"
+}

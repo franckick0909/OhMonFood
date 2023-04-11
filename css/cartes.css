@@ -1,0 +1,135 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+.restaurant{
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.restaurant .titre{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.cartes-contant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.cartes-contant .cartes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    max-width: 43rem;
+    max-height: 19rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cartes:hover{
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 12px -1px, rgba(0, 0, 0, 0.06) 0px 4px 8px -1px;
+}
+
+.cartes-contant .cartes img{
+    object-fit: cover;
+    object-position: center;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cartes-contant .cartes span{
+    position: absolute;
+    background: hsl(165, 56%, 74%);
+    color: hsl(165, 56%, 24%);
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    right: 1rem;
+    top: 1rem;
+    border-radius: 3px;
+    animation: fade 1s linear infinite alternate-reverse;
+}
+
+
+@keyframes fade{
+    0%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.cartes-contant .cartes .cartes-menu{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartes-contant .cartes .cartes-menu h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #222;
+}
+
+.cartes-contant .cartes .cartes-menu p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.cartes-contant .cartes .cartes-menu .coeur{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.cartes-contant .cartes .cartes-menu .coeur i{
+    position: absolute;
+    font-size: 1.8rem;
+    left: 50%;
+    line-height: 3rem;
+    text-align: center;
+    color: black;
+}
+
+.cartes-contant .cartes .cartes-menu .coeur .fa-solid{
+    color: transparent;
+    background-image: linear-gradient(0deg,#9356dc,#ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cartes-contant .cartes .cartes-menu .coeur .fa-solid:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
